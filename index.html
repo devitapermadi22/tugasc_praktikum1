@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum Cloud Computing - Tugas Modul 01</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            color: #f8fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background-color: #1e293b;
+            border: 1px solid #334155;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            max-width: 450px;
+            width: 90%;
+        }
+        .badge {
+            background-color: #3b82f6;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+        h1 {
+            margin: 1rem 0 0.5rem;
+            font-size: 1.6rem;
+        }
+        p {
+            color: #94a3b8;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        .info-box {
+            background-color: #0f172a;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+        .info-box div {
+            margin-bottom: 0.4rem;
+        }
+        button {
+            background-color: #10b981;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background-color: #059669;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <span class="badge">VERCEL CLOUD DEPLOYMENT</span>
+        <h1>Tugas Modul 01: Web Server on Cloud</h1>
+        <p>Website statis ini berhasil di-deploy menggunakan layanan cloud Vercel dan terhubung dengan GitHub.</p>
+        
+        <div class="info-box">
+            <div><strong>Nama:</strong> Devita</div>
+            <div><strong>NIM:</strong> [Isi NIM Kamu]</div>
+            <div><strong>Kelas:</strong> [Isi Kelas Kamu]</div>
+            <div><strong>Status Versi:</strong> Versi 1.0 (Initial Deploy)</div>
+        </div>
+
+        <button onclick="cekStatus()">Cek Status Server</button>
+    </div>
+
+    <script>
+        function cekStatus() {
+            alert("Server Cloud berjalan normal! Waktu akses: " + new Date().toLocaleString('id-ID'));
+        }
+    </script>
+</body>
+</html>
